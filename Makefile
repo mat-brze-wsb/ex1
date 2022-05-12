@@ -10,5 +10,9 @@ lint:
 test:
 		PYTHONPATH=. py.test
 
+docker_build:
+		docker build -t hello-world-printer .
+
 run:
 		PYTHONPATH=. FLASK_APP=hello_world flask run
+
